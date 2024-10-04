@@ -2,16 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Uiyeun";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105@1.1/Uiyeun.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  font-family: "Uiyeun", sans-serif;
+}
+
+body {
+  font-family: "Uiyeun", sans-serif;
+  font-size: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
