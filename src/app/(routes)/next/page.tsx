@@ -45,7 +45,7 @@ export default Posts
 export default function NextStudyPage() {
   return (
     <div className="">
-      <h1>Next js 정리</h1>
+      <h1 className="">Next js 정리</h1>
       <h1>라우팅 처리 방법</h1>
       <ul>
         <li>

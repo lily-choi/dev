@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "./_layouts/Header";
+import Footer from "./_layouts/Footer";
 
 export const metadata: Metadata = {
   title: "lily choi dev",
@@ -13,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body style={{ fontFamily: "Uiyeun, sans-serif" }}>{children}</body>
+      <body style={{ fontFamily: "Uiyeun, sans-serif" }}>
+        <Header />
+        <main className="px-[5%]">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
