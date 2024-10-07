@@ -12,7 +12,7 @@ export default async function PostListPage() {
       <PostTabMenu />
       <section className={wrap}>
         {postList.map((post, idx) => (
-          <PostCard post={post} idx={idx} />
+          <PostCard post={post} key={idx} />
         ))}
       </section>
     </div>

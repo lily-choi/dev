@@ -15,5 +15,4 @@ export type Post = {
 
 export interface PostCardParam {
   post: Post;
-  idx: number;
 }

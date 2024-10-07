@@ -1,4 +1,5 @@
 import { PostCardParam } from "@/app/_types";
+import Image from "next/image";
 
 const cardBaseClasses =
   "w-full md:w-[45%] lg:w-[30%] h-[330px] rounded-[10px] border border-black overflow-hidden transition-all duration-150";
@@ -10,12 +11,11 @@ const categoryClasses =
 const titleClasses = "text-2xl truncate";
 const descClasses = "truncate text-grey-100 font-light";
 
-export default function PostCard({ post, idx }: PostCardParam) {
-  console.log(post);
+export default function PostCard({ post }: PostCardParam) {
   return (
-    <div className={`${cardBaseClasses} ${cardHoverClasses}`} key={idx}>
+    <div className={`${cardBaseClasses} ${cardHoverClasses}`}>
       <div className={imageWrapperClasses}>
-        <img className="object-cover" alt={post.title} src={post.thumbnail} />
+        <img alt={post.title} src={post.thumbnail} />
       </div>
       <div className="p-[10px]">
         <span className={categoryClasses}>{post.category}</span>

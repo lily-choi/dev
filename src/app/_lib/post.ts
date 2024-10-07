@@ -45,7 +45,6 @@ export const parsePostAbstract = (postPath: string) => {
     .replace(`${BASE_PATH}/`, "")
     .replace(".mdx", "");
 
-  console.log(filePath);
   const [categoryPath, slug] = filePath.split("/");
   const url = `/blog/${categoryPath}/${slug}`;
   const categoryPublicName = getCategoryPublicName(categoryPath);
