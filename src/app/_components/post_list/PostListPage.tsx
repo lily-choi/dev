@@ -6,9 +6,12 @@ export default async function PostListPage() {
 
   return (
     <section className="flex flex-wrap gap-10">
-      {postList.map((post) => {
+      {postList.map((post, idx) => {
         return (
-          <div className="w-[30%] min-w-[250px] max-w-[500px] h-[300px] border">
+          <div
+            className="w-[30%] min-w-[250px] max-w-[500px] h-[300px] border"
+            key={idx}
+          >
             <div className="w-auto min-w-[250px] h-[200px] flex justify-center items-center overflow-hidden">
               <img
                 className="object-cover"
