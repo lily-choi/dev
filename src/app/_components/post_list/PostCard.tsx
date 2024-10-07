@@ -1,5 +1,4 @@
 import { PostCardParam } from "@/app/_types";
-import Image from "next/image";
 
 const cardBaseClasses =
   "w-full md:w-[45%] lg:w-[30%] h-[330px] rounded-[10px] border border-black overflow-hidden transition-all duration-150";
