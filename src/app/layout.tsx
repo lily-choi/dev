@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="ko">
       <body style={{ fontFamily: "Uiyeun, sans-serif" }}>
         <Header />
-        <main className="px-[5%]">{children}</main>
+        <main className="px-[5%] md:px-[10%]">{children}</main>
         <Footer />
       </body>
     </html>

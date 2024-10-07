@@ -4,4 +4,5 @@ export interface PostMatter {
   dateString: string;
   thumbnail: string;
   desc: string;
+  category: string;
 }

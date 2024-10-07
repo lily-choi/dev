@@ -18,9 +18,7 @@ export const getPostPaths = (category?: string) => {
 
 // MDX 파일 파싱
 const parsePost = async (postPath: string) => {
-  console.log(postPath);
   const postAbstract = parsePostAbstract(postPath);
-  console.log("ssmslmslsmlsml", postAbstract);
   const postDetail = await parsePostDetail(postPath);
   return {
     ...postAbstract,
@@ -63,7 +61,6 @@ export const getCategoryPublicName = (dirPath: string) =>
 // 모든 게시물 목록 조회 (블로그 메인에서 사용)
 export const getPostList = async (category?: string) => {
   const postPaths = getPostPaths(category);
-  console.log("skskskks", postPaths);
   const postList = await Promise.all(
     postPaths.map((postPath) => parsePost(postPath))
   );
